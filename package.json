@@ -1,0 +1,24 @@
+{
+  "name": "react-perf",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Perf testing React",
+  "author": "Michael Ridgway <mridgway@yahoo-inc.com>",
+  "scripts": {
+    "start": "NODE_ENV=production node bench-chat.js"
+  },
+  "dependencies": {
+    "babel": "^4.6.3",
+    "classnames": "^1.1.4",
+    "debug": "^2.0.0",
+    "flux-router-component": "^0.6.1",
+    "fluxible": "^0.3.1",
+    "fluxible-plugin-fetchr": "^0.2.3",
+    "react": "^0.13.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^4.0.0",
+    "benchmark": "^1.0.0",
+    "es6-promise": "^2.0.1"
+  }
+}

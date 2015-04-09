@@ -13,10 +13,11 @@ var debug = require('debug')('Example');
 var React = require('react');
 var app = require('./app');
 var HtmlComponent = React.createFactory(require('./components/Html.jsx'));
-var navigateAction = require('fluxible-router').navigateAction;
+var navigateAction = require('flux-router-component').navigateAction;
 
 var server = express();
 server.set('state namespace', 'App');
+server.use(favicon(__dirname + '/../favicon.ico'));
 server.use('/public', express.static(__dirname + '/build'));
 server.use(cookieParser());
 server.use(bodyParser.json());
@@ -53,7 +54,6 @@ server.use(function (req, res, next) {
         var exposed = 'window.App=' + serialize(app.dehydrate(context)) + ';';
 
         debug('Rendering Application component into html');
-        var Component = app.getComponent();
         var html = React.renderToStaticMarkup(HtmlComponent({
             state: exposed,
             markup: React.renderToString(context.createElement())

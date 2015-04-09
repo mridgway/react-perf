@@ -31,7 +31,7 @@ var ThreadListItem = React.createClass({
         var lastMessage = thread.lastMessage;
         var classSet = classNames({
             'thread-list-item': true,
-            'active': this.props.isActive
+            'active': thread.id === this.props.currentThreadID
         });
         return (
             <li className={classSet}>

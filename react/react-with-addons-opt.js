@@ -6284,11 +6284,6 @@ var ReactClass = {
         ) : null);
       }
 
-      // Wire up auto-binding
-      if (this.__reactAutoBindMap) {
-        bindAutoBindMethods(this);
-      }
-
       this.props = props;
       this.context = context;
       this.state = null;

@@ -5378,8 +5378,8 @@
     var mapBookKeeping = traverseContext;
     var mapResult = mapBookKeeping.mapResult;
 
+    var keyUnique = ('undefined' === typeof mapResult[name]);
     if ("production" !== "production") {
-      var keyUnique = !mapResult.hasOwnProperty(name);
       ("production" !== "production" ? warning(
           keyUnique,
           'ReactChildren.map(...): Encountered two children with the same key, ' +
@@ -5389,7 +5389,7 @@
       ) : null);
     }
 
-    if ('undefined' === typeof mapResult[name]) {
+    if (keyUnique) {
       var mappedChild =
           mapBookKeeping.mapFunction.call(mapBookKeeping.mapContext, child, i);
       mapResult[name] = mappedChild;
@@ -19380,8 +19380,8 @@
   function flattenSingleChildIntoContext(traverseContext, child, name) {
     // We found a component instance.
     var result = traverseContext;
+    var keyUnique = ('undefined' === typeof result[name]);
     if ("production" !== "production") {
-      var keyUnique = !result.hasOwnProperty(name);
       ("production" !== "production" ? warning(
           keyUnique,
           'flattenChildren(...): Encountered two children with the same key, ' +
@@ -19390,7 +19390,7 @@
           name
       ) : null);
     }
-    if ('undefined' === typeof result[name] && child != null) {
+    if (keyUnique && child != null) {
       result[name] = child;
     }
   }

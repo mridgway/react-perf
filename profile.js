@@ -1,10 +1,10 @@
 require('babel/register');
 var profiler = require('profiler');
 var Promise = require('es6-promise').Promise;
-var ReactOpt = require('./react/optimized');
+var ReactOpt = require('./react/stock');
 var state = require('./state.json');
 var OptimizedAppPromise = new Promise (function (resolve) {
-    var app = require('./chat-optimized/app');
+    var app = require('./chat/app');
     app.rehydrate(JSON.parse(JSON.stringify(state)), function (err, context) {
         resolve(context);
     });

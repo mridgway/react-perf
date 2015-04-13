@@ -24,9 +24,13 @@ Promise.all([StockAppPromise, OptimizedAppPromise]).then(function (contexts) {
     var output = React.renderToStaticMarkup(contexts[0].createElement());
     var outputOpt = ReactOpt.renderToStaticMarkup(contexts[1].createElement());
     if (output !== outputOpt) {
-        console.log(output);
-        console.log(outputOpt);
         throw new Error('Output not the same');
+    }
+
+    // allow v8 optimization
+    for(var i=0; i<1000; ++i) {
+        React.renderToStaticMarkup(contexts[0].createElement());
+        ReactOpt.renderToStaticMarkup(contexts[1].createElement());
     }
 
     // add tests

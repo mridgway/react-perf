@@ -1,55 +1,54 @@
 require('babel/register');
-var Benchmark = require('benchmark');
+var Benchtable = require('benchtable');
 var Promise = require('es6-promise').Promise;
 var React = require('./react/stock');
 var ReactOpt = require('./react/optimized');
 var state = require('./state.json');
 
-var ReactPromise = new Promise (function (resolve) {
+var StockAppPromise = new Promise (function (resolve) {
     var app = require('./chat/app');
     app.rehydrate(JSON.parse(JSON.stringify(state)), function (err, context) {
         resolve(context);
     });
 });
 
-var ReactOptPromise = new Promise (function (resolve) {
+var OptimizedAppPromise = new Promise (function (resolve) {
     var app = require('./chat-optimized/app');
     app.rehydrate(JSON.parse(JSON.stringify(state)), function (err, context) {
         resolve(context);
     });
 });
 
-Promise.all([ReactPromise, ReactOptPromise]).then(function (contexts) {
-    var suite = new Benchmark.Suite();
-    global.React = React;
-    global.ReactOpt = ReactOpt;
-    var context = global.context = contexts[0];
-    var contextOpt = global.contextOpt = contexts[1];
-    var output = React.renderToStaticMarkup(context.createElement());
-    var outputOpt = ReactOpt.renderToStaticMarkup(contextOpt.createElement());
+Promise.all([StockAppPromise, OptimizedAppPromise]).then(function (contexts) {
+    var suite = new Benchtable();
+    var output = React.renderToStaticMarkup(contexts[0].createElement());
+    var outputOpt = ReactOpt.renderToStaticMarkup(contexts[1].createElement());
     if (output !== outputOpt) {
+        console.log(output);
+        console.log(outputOpt);
         throw new Error('Output not the same');
     }
 
     // add tests
-    suite.add('React', function() {
-        React.renderToString(context.createElement());
-    })
-    .add('ReactOpt', function() {
-        ReactOpt.renderToString(contextOpt.createElement());
-    })
-    // add listeners
-    .on('error', function (e) {
-        throw e.target.error;
-    })
-    .on('cycle', function(event) {
-      console.log(String(event.target));
-    })
-    .on('complete', function() {
-        console.log('Fastest is ' + this.filter('fastest').pluck('name'));
-    })
-    // run async
-    .run({ async: true, defer: true});
+    suite
+        .addFunction('RenderChat', function(React, context) {
+            React.renderToString(context.createElement());
+        })
+        .addInput('Optimized', [ReactOpt, contexts[1]])
+        .addInput('Stock', [ReactOpt, contexts[0]])
+        // add listeners
+        .on('error', function (e) {
+            throw e.target.error;
+        })
+        .on('cycle', function(event) {
+          console.log(String(event.target));
+        })
+        .on('complete', function() {
+            console.log('The Fastest test suite is ' + '\u001b[32m' + this.filter('fastest').pluck('name') + '\u001b[0m\n');
+            console.log(this.table.toString());
+        })
+        // run async
+        .run({ async: true, defer: true});
 }).catch(function (e) {
     console.log(e.stack || e);
 });

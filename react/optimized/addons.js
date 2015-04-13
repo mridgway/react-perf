@@ -1,3 +1,3 @@
 //module.exports = require('./lib/ReactWithAddons');
 
-module.exports = require('../react-nobind.min');
+module.exports = require('../react-with-addons-opt');

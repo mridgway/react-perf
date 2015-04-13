@@ -1,0 +1,1100 @@
+Statistical profiling result from v8.log, (16978 ticks, 13374 unaccounted, 0 excluded).
+
+ [Unknown]:
+   ticks  total  nonlib   name
+  13374   78.8%
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   3276   19.3%   19.3%  LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1992   11.7%   11.7%  LazyCompile: bind native v8natives.js:1578
+    850    5.0%    5.0%  LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    662    3.9%    3.9%  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    652    3.8%    3.8%  LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    570    3.4%    3.4%  LazyCompile: *hasOwnProperty native v8natives.js:249
+    510    3.0%    3.0%  Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    390    2.3%    2.3%  LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    390    2.3%    2.3%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    372    2.2%    2.2%  LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+    354    2.1%    2.1%  LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    354    2.1%    2.1%  LazyCompile: b native v8natives.js:1582
+    306    1.8%    1.8%  LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    258    1.5%    1.5%  LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    258    1.5%    1.5%  LazyCompile: *adler32 /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    235    1.4%    1.4%  LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    213    1.3%    1.3%  LazyCompile: ~flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    187    1.1%    1.1%  LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    179    1.1%    1.1%  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    178    1.0%    1.0%  LazyCompile: ~_maskContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    174    1.0%    1.0%  Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    170    1.0%    1.0%  LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    147    0.9%    0.9%  LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+    140    0.8%    0.8%  LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    135    0.8%    0.8%  LazyCompile: *keys native v8natives.js:333
+    126    0.7%    0.7%  LazyCompile: *LocalTimezone native date.js:51
+    115    0.7%    0.7%  LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+    112    0.7%    0.7%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:59
+    107    0.6%    0.6%  LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    106    0.6%    0.6%  LazyCompile: *getComponentClassForElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    102    0.6%    0.6%  LazyCompile: *ReactElement.isValidElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     95    0.6%    0.6%  LazyCompile: ReactElement.createElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:149
+     95    0.6%    0.6%  LazyCompile: *test native regexp.js:217
+     93    0.5%    0.5%  LazyCompile: *construct /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86    0.5%    0.5%  LazyCompile: *fn /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:713
+     85    0.5%    0.5%  LazyCompile: ReactElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:93
+     85    0.5%    0.5%  LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:650
+     84    0.5%    0.5%  LazyCompile: *replace native string.js:221
+     75    0.4%    0.4%  LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     74    0.4%    0.4%  LazyCompile: *assign /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:194
+     74    0.4%    0.4%  LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     71    0.4%    0.4%  Script: /Volumes/Projects/react-perf/react/react-with-addons.js
+     70    0.4%    0.4%  LazyCompile: classNames /Volumes/Projects/react-perf/node_modules/classnames/index.js:1
+     68    0.4%    0.4%  LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     66    0.4%    0.4%  LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadListItem.jsx:30
+     64    0.4%    0.4%  LazyCompile: *invariant /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     62    0.4%    0.4%  LazyCompile: *set /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     59    0.3%    0.3%  LazyCompile: *forEach native array.js:1087
+     55    0.3%    0.3%  LazyCompile: ~bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48    0.3%    0.3%  LazyCompile: getComponentKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48    0.3%    0.3%  LazyCompile: *assertValidProps /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48    0.3%    0.3%  LazyCompile: *ReactDOMComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48    0.3%    0.3%  LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     44    0.3%    0.3%  LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43    0.3%    0.3%  LazyCompile: *shouldIgnoreValue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     42    0.2%    0.2%  LazyCompile: ~findReactContainerForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     41    0.2%    0.2%  LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%    0.2%  LazyCompile: mergeIntoWithNoDuplicateKeys /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36    0.2%    0.2%  LazyCompile: *toString native v8natives.js:1378
+     36    0.2%    0.2%  LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%    0.2%  LazyCompile: *getReactRootIDFromNodeID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%    0.2%  LazyCompile: *createInternalComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%    0.2%  LazyCompile: *map native array.js:1215
+     30    0.2%    0.2%  LazyCompile: *toObject /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:177
+     30    0.2%    0.2%  LazyCompile: *substr native string.js:695
+     29    0.2%    0.2%  LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    0.2%    0.2%  RegExp: [&><"']
+     28    0.2%    0.2%  LazyCompile: *LocalTimezoneString native date.js:254
+     25    0.1%    0.1%  LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25    0.1%    0.1%  LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+     25    0.1%    0.1%  LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageListItem.jsx:28
+     24    0.1%    0.1%  LazyCompile: *isArray native array.js:1488
+     22    0.1%    0.1%  LazyCompile: *RouterMixin.getChildContext /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/RouterMixin.js:41
+     20    0.1%    0.1%  LazyCompile: *standardReleaser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%    0.1%  LazyCompile: *getAllChrono /Volumes/Projects/react-perf/chat/stores/ThreadStore.js:29
+     19    0.1%    0.1%  LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     19    0.1%    0.1%  LazyCompile: *TwoDigitString native date.js:213
+     19    0.1%    0.1%  LazyCompile: *SubString native string.js:205
+     19    0.1%    0.1%  LazyCompile: *FluxibleMixin.getStore /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:98
+     18    0.1%    0.1%  LazyCompile: ~_createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%    0.1%  LazyCompile: *sort native array.js:741
+     18    0.1%    0.1%  LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+     18    0.1%    0.1%  LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%    0.1%  LazyCompile: *get /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%    0.1%  RegExp: ^(data|aria)-[a-z_][a-z\\d_.\\-]*$
+     17    0.1%    0.1%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/stores/MessageStore.js:55
+     15    0.1%    0.1%  LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     15    0.1%    0.1%  LazyCompile: *invariant /Volumes/Projects/react-perf/node_modules/react/lib/invariant.js:25
+     15    0.1%    0.1%  LazyCompile: *cloneWithProps /Volumes/Projects/react-perf/node_modules/react/lib/cloneWithProps.js:32
+     14    0.1%    0.1%  LazyCompile: *getReactMountReady /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14    0.1%    0.1%  LazyCompile: *_processProps /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14    0.1%    0.1%  LazyCompile: *React.createClass.render /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:106
+     13    0.1%    0.1%  LazyCompile: ~bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+     13    0.1%    0.1%  LazyCompile: *floor native math.js:97
+     12    0.1%    0.1%  LazyCompile: ~getCount /Volumes/Projects/react-perf/chat/stores/UnreadThreadStore.js:24
+     12    0.1%    0.1%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/stores/ThreadStore.js:33
+     11    0.1%    0.1%  LazyCompile: closeAll /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10    0.1%    0.1%  Stub: ToBooleanStub_SmiSpecObjectString
+     10    0.1%    0.1%  LazyCompile: ~assign /Volumes/Projects/react-perf/node_modules/react/lib/Object.assign.js:16
+     10    0.1%    0.1%  LazyCompile: perform /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10    0.1%    0.1%  LazyCompile: *indexOf native string.js:118
+     10    0.1%    0.1%  LazyCompile: *guard /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9    0.1%    0.1%  Stub: BinaryOpStub_ADD_OverwriteRight_BothStrings
+      9    0.1%    0.1%  RegExp: [=.:]
+      9    0.1%    0.1%  LazyCompile: initializeAll /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9    0.1%    0.1%  LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9    0.1%    0.1%  LazyCompile: *oneArgumentPooler /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9    0.1%    0.1%  KeyedLoadIC: string
+      8    0.0%    0.0%  LazyCompile: ~assertValidProps /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      8    0.0%    0.0%  LazyCompile: ~InsertionSort native array.js:764
+      8    0.0%    0.0%  LazyCompile: *wrapUserProvidedKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      8    0.0%    0.0%  LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageComposer.jsx:31
+      8    0.0%    0.0%  LazyCompile: *getStore /Volumes/Projects/react-perf/node_modules/fluxible/node_modules/dispatchr/lib/Dispatcher.js:130
+      8    0.0%    0.0%  LazyCompile: *getStateFromStores /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:39
+      8    0.0%    0.0%  LazyCompile: *getAllForThread /Volumes/Projects/react-perf/chat/stores/MessageStore.js:52
+      8    0.0%    0.0%  LazyCompile: *createElement /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleContext.js:44
+      8    0.0%    0.0%  LazyCompile: *TimeString native date.js:240
+      8    0.0%    0.0%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:48
+      7    0.0%    0.0%  LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/RouterMixin.js:43
+      7    0.0%    0.0%  LazyCompile: renderToString /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      7    0.0%    0.0%  LazyCompile: *mergedResult /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      7    0.0%    0.0%  LazyCompile: *createInstanceForText /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      7    0.0%    0.0%  LazyCompile: *React.createClass.getInitialState /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:35
+      6    0.0%    0.0%  LazyCompile: ~_processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      6    0.0%    0.0%  LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/profile.js:13
+      6    0.0%    0.0%  LazyCompile: STRING_ADD_LEFT native runtime.js:183
+      6    0.0%    0.0%  LazyCompile: *ceil native math.js:79
+      6    0.0%    0.0%  LazyCompile: *React.createClass._getHrefFromProps /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:45
+      6    0.0%    0.0%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/stores/ThreadStore.js:38
+      6    0.0%    0.0%  CallNormal: args_count: 0 {1}
+      5    0.0%    0.0%  LazyCompile: ~instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5    0.0%    0.0%  LazyCompile: ~b native v8natives.js:1582
+      5    0.0%    0.0%  LazyCompile: *getMessageListItem /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:24
+      5    0.0%    0.0%  LazyCompile: *React.createClass.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleComponent.js:18
+      5    0.0%    0.0%  KeyedLoadIC: args_count: 0 {2}
+      4    0.0%    0.0%  Script: ~/Volumes/Projects/react-perf/react/react-with-addons.js
+      4    0.0%    0.0%  LazyCompile: ~Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+      4    0.0%    0.0%  LazyCompile: *reinitializeTransaction /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4    0.0%    0.0%  LazyCompile: *processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4    0.0%    0.0%  LazyCompile: *o.(anonymous function) /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:738
+      4    0.0%    0.0%  LazyCompile: *getInitialState /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4    0.0%    0.0%  LazyCompile: *getComponentContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleContext.js:148
+      4    0.0%    0.0%  LazyCompile: *enqueuePutListener /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4    0.0%    0.0%  LazyCompile: *UseSparseVariant native array.js:111
+      4    0.0%    0.0%  KeyedLoadIC: textarea
+      3    0.0%    0.0%  Stub: RecordWriteStub
+      3    0.0%    0.0%  Stub: ElementsTransitionAndStoreStub
+      3    0.0%    0.0%  LazyCompile: ~traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    0.0%    0.0%  LazyCompile: ~mergeIntoWithNoDuplicateKeys /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    0.0%    0.0%  LazyCompile: ~fn /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:713
+      3    0.0%    0.0%  LazyCompile: ~classNames /Volumes/Projects/react-perf/node_modules/classnames/index.js:1
+      3    0.0%    0.0%  LazyCompile: ~LocalTimezone native date.js:51
+      3    0.0%    0.0%  LazyCompile: *toTimeString native date.js:337
+      3    0.0%    0.0%  LazyCompile: *initialize /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    0.0%    0.0%  LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:35
+      3    0.0%    0.0%  LazyCompile: *getAllForCurrentThread /Volumes/Projects/react-perf/chat/stores/MessageStore.js:63
+      3    0.0%    0.0%  LazyCompile: *createReactRootIndex /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    0.0%    0.0%  LazyCompile: *React.createClass.render /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleComponent.js:25
+      3    0.0%    0.0%  KeyedLoadIC: makePath
+      3    0.0%    0.0%  KeyedLoadIC: args_count: 0
+      2    0.0%    0.0%  LazyCompile: ~render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      2    0.0%    0.0%  LazyCompile: ~render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+      2    0.0%    0.0%  LazyCompile: ~_processContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      2    0.0%    0.0%  LazyCompile: ~ReactElement.createElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:149
+      2    0.0%    0.0%  LazyCompile: ~QuickSort native array.js:793
+      2    0.0%    0.0%  LazyCompile: APPLY_PREPARE native runtime.js:438
+      2    0.0%    0.0%  LazyCompile: *slice native string.js:510
+      2    0.0%    0.0%  LazyCompile: *random native math.js:192
+      2    0.0%    0.0%  LazyCompile: *isInTransaction /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      2    0.0%    0.0%  LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/ChatApp.jsx:31
+      2    0.0%    0.0%  LazyCompile: *getCurrent /Volumes/Projects/react-perf/chat/stores/ThreadStore.js:54
+      2    0.0%    0.0%  LazyCompile: *createReactRootID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      2    0.0%    0.0%  LazyCompile: *$define.Symbol /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:610
+      2    0.0%    0.0%  KeyedLoadIC: args_count: 0 {4}
+      1    0.0%    0.0%  Script: ~/Volumes/Projects/react-perf/node_modules/react/lib/ReactDOMIDOperations.js
+      1    0.0%    0.0%  LazyCompile: ~sort native array.js:741
+      1    0.0%    0.0%  LazyCompile: ~set /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+      1    0.0%    0.0%  LazyCompile: ~render /Volumes/Projects/react-perf/chat/components/MessageListItem.jsx:28
+      1    0.0%    0.0%  LazyCompile: ~render /Volumes/Projects/react-perf/chat/components/MessageComposer.jsx:31
+      1    0.0%    0.0%  LazyCompile: ~rehydrate /Volumes/Projects/react-perf/chat/stores/UnreadThreadStore.js:37
+      1    0.0%    0.0%  LazyCompile: ~quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~hookExtensions /Volumes/Projects/react-perf/node_modules/babel/lib/babel/api/register/node.js:137
+      1    0.0%    0.0%  LazyCompile: ~getInitialState /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:41
+      1    0.0%    0.0%  LazyCompile: ~getAllForThread /Volumes/Projects/react-perf/chat/stores/MessageStore.js:52
+      1    0.0%    0.0%  LazyCompile: ~floor native math.js:97
+      1    0.0%    0.0%  LazyCompile: ~enqueuePutListener /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~construct /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~bindAutoBindMethod /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:650
+      1    0.0%    0.0%  LazyCompile: ~assign /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:194
+      1    0.0%    0.0%  LazyCompile: ~addChecksumToMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~_interopRequire /Volumes/Projects/react-perf/node_modules/babel/lib/babel/generation/buffer.js:3
+      1    0.0%    0.0%  LazyCompile: ~ReactServerRenderingTransaction /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: ~FluxibleMixin.getStore /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:98
+      1    0.0%    0.0%  LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ChatApp.jsx:38
+      1    0.0%    0.0%  LazyCompile: *getValue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: *getStateFromStores /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:45
+      1    0.0%    0.0%  LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:41
+      1    0.0%    0.0%  LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/MessageComposer.jsx:27
+      1    0.0%    0.0%  LazyCompile: *addChecksumToMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: *ToUint32 native runtime.js:586
+      1    0.0%    0.0%  LazyCompile: *ReactServerRenderingTransaction /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    0.0%    0.0%  LazyCompile: *ReactPropTransferer.mergeProps /Volumes/Projects/react-perf/node_modules/react/lib/ReactPropTransferer.js:102
+      1    0.0%    0.0%  LazyCompile: *IsPrimitive native runtime.js:618
+      1    0.0%    0.0%  KeyedStoreIC: makePath {1}
+      1    0.0%    0.0%  KeyedStoreIC: args_count: 0 {3}
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [GC]:
+   ticks  total  nonlib   name
+    283    1.7%
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+   3276   19.3%  LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   3273   99.9%    LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2641   80.7%      LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2641  100.0%        LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2641  100.0%          LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2641  100.0%            LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    632   19.3%      LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    632  100.0%        LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    632  100.0%          LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    632  100.0%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+   1992   11.7%  LazyCompile: bind native v8natives.js:1578
+   1727   86.7%    LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1651   95.6%      LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1640   99.3%        LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1640  100.0%          LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1640  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     76    4.4%      LazyCompile: ~bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     54   71.1%        LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     51   94.4%          LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     51  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    5.6%          LazyCompile: ~Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22   28.9%        LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     13   59.1%          LazyCompile: ~Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     13  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9   40.9%          LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    236   11.8%    LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:650
+    220   93.2%      LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+    220  100.0%        LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+    220  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    187   85.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33   15.0%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     16    6.8%      LazyCompile: ~bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+     11   68.8%        LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+     11  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      8   72.7%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3   27.3%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5   31.3%        LazyCompile: ~Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+      5  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    850    5.0%  LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    838   98.6%    LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    838  100.0%      LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    838  100.0%        LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    838  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    579   69.1%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    259   30.9%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    662    3.9%  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    621   93.8%    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    429   69.1%      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    429  100.0%        LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    429  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    429  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    186   30.0%      LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    150   80.6%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    129   86.0%          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    126   97.7%            LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    2.3%            LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     15   10.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     15  100.0%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      6    4.0%          LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      6  100.0%            LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36   19.4%        LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36  100.0%          LazyCompile: perform /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36  100.0%            LazyCompile: renderToString /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30    4.5%    LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30  100.0%      LazyCompile: perform /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30  100.0%        LazyCompile: renderToString /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30  100.0%          LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/profile.js:13
+     30  100.0%            LazyCompile: $$$internal$$tryCatch /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:302
+
+    652    3.8%  LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    651   99.8%    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    651  100.0%      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    651  100.0%        LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    651  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    389   59.8%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    262   40.2%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    570    3.4%  LazyCompile: *hasOwnProperty native v8natives.js:249
+     87   15.3%    LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     87  100.0%      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     87  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     87  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     87  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86   15.1%    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%        LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     76   13.3%    Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     16   21.1%      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:48
+     14   87.5%        LazyCompile: *map native array.js:1215
+     14  100.0%          LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+     14  100.0%            LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      2   12.5%        LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+      2  100.0%          LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      2  100.0%            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     13   17.1%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadListItem.jsx:30
+     13  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     13  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     13  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9   11.8%      LazyCompile: b native v8natives.js:1582
+      9  100.0%        LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%          LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9   11.8%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+      9  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9   11.8%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageListItem.jsx:28
+      9  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9   11.8%      LazyCompile: *getMessageListItem /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:24
+      8   88.9%        LazyCompile: *map native array.js:1215
+      8  100.0%          LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+      8  100.0%            LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1   11.1%        LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+      1  100.0%          LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1  100.0%            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5    6.6%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageComposer.jsx:31
+      5  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4    5.3%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+      4  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     62   10.9%    LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     62  100.0%      LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     52   83.9%        LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     52  100.0%          LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     52  100.0%            LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10   16.1%        LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10  100.0%          LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10  100.0%            LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     60   10.5%    LazyCompile: *ReactDOMComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     60  100.0%      LazyCompile: *createInternalComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     60  100.0%        LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     60  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     60  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43    7.5%    LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40   93.0%      LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    7.0%      LazyCompile: ~_createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    4.9%    LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28  100.0%      LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22    3.9%    LazyCompile: ReactElement.createElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:149
+     17   77.3%      LazyCompile: *React.createClass.render /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:106
+     17  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4   18.2%      LazyCompile: *cloneWithProps /Volumes/Projects/react-perf/node_modules/react/lib/cloneWithProps.js:32
+      4  100.0%        LazyCompile: *React.createClass.render /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleComponent.js:25
+      4  100.0%          LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    4.5%      LazyCompile: b native v8natives.js:1582
+      1  100.0%        LazyCompile: *createElement /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleContext.js:44
+      1  100.0%          LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/profile.js:13
+      1  100.0%            LazyCompile: $$$internal$$tryCatch /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:302
+     20    3.5%    Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     16   80.0%      LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10   62.5%        LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     10  100.0%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      6   37.5%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      6  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5   83.3%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1   16.7%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4   20.0%      LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    3.5%    LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20  100.0%      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20  100.0%        LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    3.0%    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+     17  100.0%      LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+     17  100.0%        LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14   82.4%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14  100.0%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3   17.6%          LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%            LazyCompile: perform /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    510    3.0%  Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    145   28.4%    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadListItem.jsx:30
+    145  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    145  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    145  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    145  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86   16.9%    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageListItem.jsx:28
+     86  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     51   10.0%    LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:48
+     48   94.1%      LazyCompile: *map native array.js:1215
+     48  100.0%        LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+     48  100.0%          LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48  100.0%            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    5.9%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+      3  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    8.8%    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageComposer.jsx:31
+     45  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    7.6%    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+     39  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     38    7.5%    LazyCompile: *getMessageListItem /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:24
+     32   84.2%      LazyCompile: *map native array.js:1215
+     32  100.0%        LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+     32  100.0%          LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32  100.0%            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5   13.2%      LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+      5  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      5  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1    2.6%      LazyCompile: ~render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+      1  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      1  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    6.5%    LazyCompile: b native v8natives.js:1582
+     33  100.0%      LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33  100.0%        LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33  100.0%          LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30    5.9%    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ChatApp.jsx:38
+     30  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    5.7%    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+     29  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    390    2.3%  LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    319   81.8%    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    224   70.2%      LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    222   99.1%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    170   76.6%          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    169   99.4%            LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     52   23.4%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45   86.5%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      7   13.5%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     95   29.8%      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     95  100.0%        LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     95  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     95  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     46   11.8%    LazyCompile: *enqueuePutListener /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43   93.5%      LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    6.5%      LazyCompile: ~_createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    5.4%    LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21  100.0%      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14   66.7%        LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14  100.0%          LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     14  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      7   33.3%        LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4   57.1%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3   42.9%          LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3  100.0%            LazyCompile: perform /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    390    2.3%  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    388   99.5%    LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    388  100.0%      LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    388  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    255   65.7%          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    254   99.6%            LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    132   34.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    107   81.1%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25   18.9%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    372    2.2%  LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+    366   98.4%    LazyCompile: *replace native string.js:221
+    342   93.4%      LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    309   90.4%        LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    206   66.7%          LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    199   96.6%            LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      7    3.4%            LazyCompile: ~_createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    103   33.3%          LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     98   95.1%            LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3    2.9%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    8.5%        LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    6.6%      LazyCompile: *wrapUserProvidedKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24  100.0%        LazyCompile: getComponentKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24  100.0%          LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24  100.0%            LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    354    2.1%  LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    354  100.0%    LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    354  100.0%      LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    354  100.0%        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    354  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    354  100.0%            LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+    354    2.1%  LazyCompile: b native v8natives.js:1582
+    242   68.4%    LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    242  100.0%      LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    239   98.8%        LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    239  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    239  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27    7.6%    LazyCompile: *React.createClass.getInitialState /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:35
+     27  100.0%      LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+     27  100.0%        LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27  100.0%          LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27  100.0%            LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    5.9%    LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21  100.0%      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21  100.0%        LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     12    3.4%    LazyCompile: *createElement /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleContext.js:44
+     12  100.0%      LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/profile.js:13
+     12  100.0%        LazyCompile: $$$internal$$tryCatch /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:302
+     12  100.0%          LazyCompile: ~$$$internal$$invokeCallback /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:311
+     12  100.0%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:873
+     11    3.1%    LazyCompile: *FluxibleMixin.getStore /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:98
+     11  100.0%      LazyCompile: b native v8natives.js:1582
+      4   36.4%        LazyCompile: *getStateFromStores /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:39
+      4  100.0%          LazyCompile: b native v8natives.js:1582
+      4  100.0%            LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:35
+      4   36.4%        LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/ChatApp.jsx:31
+      4  100.0%          LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      4  100.0%            LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      3   27.3%        LazyCompile: *getStateFromStores /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:45
+      3  100.0%          LazyCompile: b native v8natives.js:1582
+      3  100.0%            LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:41
+      9    2.5%    LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:35
+      9  100.0%      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%        LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+      9  100.0%            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+
+
+ [Top down (heavy) profile]:
+  Note: callees occupying less than 0.1% are not shown.
+
+  inclusive      self           name
+  ticks   total  ticks   total
+  16531   97.4%      0    0.0%  LazyCompile: ~<anonymous> node.js:27
+  16531   97.4%      0    0.0%    LazyCompile: ~startup node.js:30
+  16531   97.4%      0    0.0%      LazyCompile: ~Module.runMain module.js:495
+  16531   97.4%      0    0.0%        LazyCompile: _tickCallback node.js:399
+  16531   97.4%      0    0.0%          LazyCompile: ~$$asap$$flush /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:106
+  16531   97.4%      0    0.0%            LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:873
+  16531   97.4%      0    0.0%              LazyCompile: ~$$$internal$$invokeCallback /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:311
+  16531   97.4%      0    0.0%                LazyCompile: $$$internal$$tryCatch /Volumes/Projects/react-perf/node_modules/es6-promise/dist/es6-promise.js:302
+  16531   97.4%      6    0.0%                  LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/profile.js:13
+  16441   96.8%      6    0.0%                    LazyCompile: renderToString /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  16362   96.4%     10    0.1%                      LazyCompile: perform /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  16324   96.1%      6    0.0%                        LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  16030   94.4%     30    0.2%                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  15711   92.5%      1    0.0%                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  15708   92.5%     36    0.2%                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  15068   88.8%      3    0.0%                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  15058   88.7%     15    0.1%                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  14967   88.2%      0    0.0%                                    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  14959   88.1%      2    0.0%                                      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  14620   86.1%     33    0.2%                                        LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  14586   85.9%     24    0.1%                                          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  14222   83.8%      4    0.0%                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  14214   83.7%     47    0.3%                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  12714   74.9%      3    0.0%                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  12704   74.8%     15    0.1%                                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  12537   73.8%      2    0.0%                                                    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  12529   73.8%      5    0.0%                                                      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  12428   73.2%     88    0.5%                                                        LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  12337   72.7%     50    0.3%                                                          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  11608   68.4%     10    0.1%                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  11587   68.2%     89    0.5%                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  10562   62.2%     10    0.1%                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+  10102   59.5%      5    0.0%                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   9926   58.5%    110    0.6%                                                                    LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   9808   57.8%     54    0.3%                                                                      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   8828   52.0%      5    0.0%                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   8804   51.9%     93    0.5%                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   7330   43.2%      3    0.0%                                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   6934   40.8%     57    0.3%                                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   6524   38.4%      2    0.0%                                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   6509   38.3%      8    0.0%                                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   6146   36.2%    127    0.7%                                                                                    LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   6018   35.4%     94    0.6%                                                                                      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   4523   26.6%      7    0.0%                                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   4488   26.4%    103    0.6%                                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   3187   18.8%      7    0.0%                                                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2829   16.7%     34    0.2%                                                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2539   15.0%      2    0.0%                                                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2520   14.8%      4    0.0%                                                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2353   13.9%    129    0.8%                                                                                                    LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   2221   13.1%     73    0.4%                                                                                                      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1361    8.0%      9    0.1%                                                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1331    7.8%     97    0.6%                                                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    589    3.5%     13    0.1%                                                                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    499    2.9%     17    0.1%                                                                                                              LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    369    2.2%     68    0.4%                                                                                                                LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    231    1.4%     42    0.2%                                                                                                                  LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     98    0.6%      6    0.0%                                                                                                                    LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     92    0.5%     76    0.4%                                                                                                                      LazyCompile: b native v8natives.js:1582
+     76    0.4%      4    0.0%                                                                                                                    LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     72    0.4%      6    0.0%                                                                                                                      LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     66    0.4%      7    0.0%                                                                                                                        LazyCompile: *replace native string.js:221
+     59    0.3%     57    0.3%                                                                                                                          LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     42    0.2%      5    0.0%                                                                                                                  LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36    0.2%      1    0.0%                                                                                                                    LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%      3    0.0%                                                                                                                      LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      3    0.0%                                                                                                                        LazyCompile: *replace native string.js:221
+     29    0.2%     27    0.2%                                                                                                                          LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     24    0.1%     24    0.1%                                                                                                                  LazyCompile: *hasOwnProperty native v8natives.js:249
+     92    0.5%     64    0.4%                                                                                                                LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25    0.1%      3    0.0%                                                                                                                  LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22    0.1%      4    0.0%                                                                                                                    LazyCompile: *replace native string.js:221
+     18    0.1%     16    0.1%                                                                                                                      LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     71    0.4%     70    0.4%                                                                                                              LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    440    2.6%     11    0.1%                                                                                                            LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    429    2.5%     44    0.3%                                                                                                              LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    362    2.1%     95    0.6%                                                                                                                LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    256    1.5%      9    0.1%                                                                                                                  LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    247    1.5%    247    1.5%                                                                                                                    LazyCompile: bind native v8natives.js:1578
+     81    0.5%     29    0.2%                                                                                                            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36    0.2%      5    0.0%                                                                                                              LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30    0.2%     15    0.1%                                                                                                                LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     72    0.4%     24    0.1%                                                                                                            LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    0.3%      6    0.0%                                                                                                              LazyCompile: *createInternalComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    0.2%     13    0.1%                                                                                                                LazyCompile: *ReactDOMComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%     20    0.1%                                                                                                                  LazyCompile: *hasOwnProperty native v8natives.js:249
+     27    0.2%     27    0.2%                                                                                                            LazyCompile: *getComponentClassForElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    0.1%     20    0.1%                                                                                                          LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    777    4.6%     68    0.4%                                                                                                        LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    668    3.9%      4    0.0%                                                                                                          LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    664    3.9%      2    0.0%                                                                                                            LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    662    3.9%     14    0.1%                                                                                                              LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    622    3.7%     12    0.1%                                                                                                                LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    582    3.4%    569    3.4%                                                                                                                  LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    0.1%     24    0.1%                                                                                                                  LazyCompile: ~flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%     17    0.1%                                                                                                          LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%     17    0.1%                                                                                                            LazyCompile: *construct /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    153    0.9%     32    0.2%                                                                                                    LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     91    0.5%      9    0.1%                                                                                                      LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%      5    0.0%                                                                                                        LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     34    0.2%      3    0.0%                                                                                                          LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     31    0.2%      3    0.0%                                                                                                            LazyCompile: *replace native string.js:221
+     28    0.2%     27    0.2%                                                                                                              LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     29    0.2%      0    0.0%                                                                                                        LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    0.2%     26    0.2%                                                                                                          LazyCompile: b native v8natives.js:1582
+     23    0.1%      7    0.0%                                                                                                      LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    188    1.1%      4    0.0%                                                                                                LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    183    1.1%     25    0.1%                                                                                                  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    151    0.9%     48    0.3%                                                                                                    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    100    0.6%      3    0.0%                                                                                                      LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     97    0.6%     97    0.6%                                                                                                        LazyCompile: bind native v8natives.js:1578
+     28    0.2%      5    0.0%                                                                                                LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      2    0.0%                                                                                                  LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    0.1%      5    0.0%                                                                                                LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    295    1.7%     10    0.1%                                                                                              LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    204    1.2%     32    0.2%                                                                                                LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    135    0.8%     25    0.1%                                                                                                  LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     51    0.3%      4    0.0%                                                                                                    LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     47    0.3%      5    0.0%                                                                                                      LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     42    0.2%      7    0.0%                                                                                                        LazyCompile: *replace native string.js:221
+     35    0.2%     33    0.2%                                                                                                          LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     45    0.3%      3    0.0%                                                                                                    LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     42    0.2%     33    0.2%                                                                                                      LazyCompile: b native v8natives.js:1582
+     20    0.1%      2    0.0%                                                                                                  LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%      0    0.0%                                                                                                    LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%      1    0.0%                                                                                                      LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      1    0.0%                                                                                                        LazyCompile: *replace native string.js:221
+     70    0.4%     51    0.3%                                                                                                LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     46    0.3%     46    0.3%                                                                                              LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    654    3.9%     34    0.2%                                                                                            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    588    3.5%     11    0.1%                                                                                              LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    568    3.3%     66    0.4%                                                                                                LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadListItem.jsx:30
+    202    1.2%     70    0.4%                                                                                                  LazyCompile: classNames /Volumes/Projects/react-perf/node_modules/classnames/index.js:1
+    107    0.6%     85    0.5%                                                                                                    LazyCompile: *fn /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:713
+     20    0.1%      2    0.0%                                                                                                      LazyCompile: *slice native string.js:510
+     18    0.1%     18    0.1%                                                                                                        LazyCompile: *SubString native string.js:205
+    167    1.0%    145    0.9%                                                                                                  Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    127    0.7%      2    0.0%                                                                                                  LazyCompile: *toTimeString native date.js:337
+    114    0.7%     18    0.1%                                                                                                    LazyCompile: *LocalTimezoneString native date.js:254
+     80    0.5%     80    0.5%                                                                                                      LazyCompile: *LocalTimezone native date.js:51
+     17    0.1%     13    0.1%                                                                                              LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    445    2.6%      9    0.1%                                                                                            LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    436    2.6%     49    0.3%                                                                                              LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    357    2.1%     84    0.5%                                                                                                LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    257    1.5%      8    0.0%                                                                                                  LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    249    1.5%    249    1.5%                                                                                                    LazyCompile: bind native v8natives.js:1578
+     49    0.3%     17    0.1%                                                                                            LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25    0.1%      3    0.0%                                                                                              LazyCompile: *createInternalComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22    0.1%      8    0.0%                                                                                                LazyCompile: *ReactDOMComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%     20    0.1%                                                                                            LazyCompile: *getComponentClassForElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     26    0.2%     26    0.2%                                                                                          LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1385    8.2%    125    0.7%                                                                                        LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1192    7.0%      8    0.0%                                                                                          LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1184    7.0%      3    0.0%                                                                                            LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+   1178    6.9%     25    0.1%                                                                                              LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    592    3.5%      8    0.0%                                                                                                LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    552    3.3%    541    3.2%                                                                                                  LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     26    0.2%     26    0.2%                                                                                                  LazyCompile: ~flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    500    2.9%    493    2.9%                                                                                                LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27    0.2%     12    0.1%                                                                                                LazyCompile: getComponentKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%     18    0.1%                                                                                                LazyCompile: ~flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     61    0.4%     39    0.2%                                                                                          LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    0.1%     21    0.1%                                                                                            LazyCompile: *construct /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    334    2.0%     47    0.3%                                                                                    LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    138    0.8%     22    0.1%                                                                                      LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     55    0.3%      3    0.0%                                                                                        LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     52    0.3%     38    0.2%                                                                                          LazyCompile: b native v8natives.js:1582
+     48    0.3%      3    0.0%                                                                                        LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    0.3%      4    0.0%                                                                                          LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     41    0.2%      7    0.0%                                                                                            LazyCompile: *replace native string.js:221
+     34    0.2%     30    0.2%                                                                                              LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+    108    0.6%      4    0.0%                                                                                      LazyCompile: *enqueuePutListener /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     74    0.4%     31    0.2%                                                                                        LazyCompile: ~findReactContainerForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43    0.3%     22    0.1%                                                                                          LazyCompile: *getReactRootIDFromNodeID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    0.2%     28    0.2%                                                                                        LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27    0.2%      3    0.0%                                                                                      LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    0.1%      2    0.0%                                                                                        LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22    0.1%      0    0.0%                                                                                          LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22    0.1%      4    0.0%                                                                                            LazyCompile: *replace native string.js:221
+     18    0.1%     14    0.1%                                                                                              LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+    239    1.4%      3    0.0%                                                                                LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    234    1.4%     31    0.2%                                                                                  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    194    1.1%     61    0.4%                                                                                    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    121    0.7%      3    0.0%                                                                                      LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    118    0.7%    118    0.7%                                                                                        LazyCompile: bind native v8natives.js:1578
+     56    0.3%     17    0.1%                                                                                LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30    0.2%     10    0.1%                                                                                  LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%     13    0.1%                                                                                    LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%     12    0.1%                                                                                LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%      4    0.0%                                                                                  LazyCompile: *createInternalComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     19    0.1%     19    0.1%                                                                                LazyCompile: *getComponentClassForElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    371    2.2%      1    0.0%                                                                              LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    330    1.9%     37    0.2%                                                                                LazyCompile: _createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    292    1.7%      9    0.1%                                                                                  LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    243    1.4%     16    0.1%                                                                                    LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    211    1.2%      2    0.0%                                                                                      LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    209    1.2%      0    0.0%                                                                                        LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    209    1.2%      6    0.0%                                                                                          LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    183    1.1%      1    0.0%                                                                                            LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    172    1.0%    171    1.0%                                                                                              LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     37    0.2%      4    0.0%                                                                                    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%     16    0.1%                                                                                      LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     38    0.2%      9    0.1%                                                                                LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      3    0.0%                                                                                  LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%     20    0.1%                                                                              LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    557    3.3%    121    0.7%                                                                            LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+    370    2.2%     97    0.6%                                                                              LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+    258    1.5%     71    0.4%                                                                                LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:650
+    187    1.1%    187    1.1%                                                                                  LazyCompile: bind native v8natives.js:1578
+     34    0.2%      7    0.0%                                                                              LazyCompile: *React.createClass.getInitialState /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:35
+     27    0.2%     27    0.2%                                                                                LazyCompile: b native v8natives.js:1582
+     17    0.1%      9    0.1%                                                                              LazyCompile: ~bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+    495    2.9%     28    0.2%                                                                            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    452    2.7%     11    0.1%                                                                              LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    239    1.4%     13    0.1%                                                                                LazyCompile: *React.createClass.render /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/NavLink.js:106
+    115    0.7%     73    0.4%                                                                                  LazyCompile: *assign /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:194
+     42    0.2%     42    0.2%                                                                                    LazyCompile: *keys native v8natives.js:333
+    107    0.6%     51    0.3%                                                                                  LazyCompile: ReactElement.createElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:149
+     38    0.2%     38    0.2%                                                                                    LazyCompile: ReactElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:93
+     17    0.1%     17    0.1%                                                                                    LazyCompile: *hasOwnProperty native v8natives.js:249
+    194    1.1%     25    0.1%                                                                                LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageListItem.jsx:28
+    100    0.6%     86    0.5%                                                                                  Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     69    0.4%      1    0.0%                                                                                  LazyCompile: *toTimeString native date.js:337
+     64    0.4%     10    0.1%                                                                                    LazyCompile: *LocalTimezoneString native date.js:254
+     45    0.3%     45    0.3%                                                                                      LazyCompile: *LocalTimezone native date.js:51
+    225    1.3%      6    0.0%                                                                            LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    216    1.3%     63    0.4%                                                                              LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    146    0.9%     41    0.2%                                                                                LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    101    0.6%      0    0.0%                                                                                  LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    101    0.6%    101    0.6%                                                                                    LazyCompile: bind native v8natives.js:1578
+     52    0.3%     52    0.3%                                                                            LazyCompile: ~_maskContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    0.2%      9    0.1%                                                                            LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%     18    0.1%                                                                          LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    917    5.4%     81    0.5%                                                                        LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    805    4.7%      3    0.0%                                                                          LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    802    4.7%      1    0.0%                                                                            LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    801    4.7%      7    0.0%                                                                              LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    599    3.5%      5    0.0%                                                                                LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    569    3.4%    555    3.3%                                                                                  LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     23    0.1%     21    0.1%                                                                                  LazyCompile: ~flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    142    0.8%    139    0.8%                                                                                LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43    0.3%      3    0.0%                                                                                LazyCompile: getComponentKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%      7    0.0%                                                                                  LazyCompile: *wrapUserProvidedKey /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    0.2%      2    0.0%                                                                                    LazyCompile: *replace native string.js:221
+     26    0.2%     20    0.1%                                                                                      LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     27    0.2%     19    0.1%                                                                          LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    153    0.9%     28    0.2%                                                                    LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    101    0.6%      9    0.1%                                                                      LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     42    0.2%      6    0.0%                                                                        LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     36    0.2%      3    0.0%                                                                          LazyCompile: *escapeTextContentForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      4    0.0%                                                                            LazyCompile: *replace native string.js:221
+     28    0.2%     26    0.2%                                                                              LazyCompile: *StringReplaceGlobalRegExpWithFunction native string.js:374
+     37    0.2%      2    0.0%                                                                        LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%     25    0.1%                                                                          LazyCompile: b native v8natives.js:1582
+     17    0.1%      1    0.0%                                                                      LazyCompile: *createMarkupForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    420    2.5%     20    0.1%                                                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    152    0.9%      0    0.0%                                                                    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    143    0.8%      8    0.0%                                                                      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    113    0.7%     19    0.1%                                                                        LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     44    0.3%      0    0.0%                                                                          LazyCompile: *enqueuePutListener /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27    0.2%      9    0.1%                                                                            LazyCompile: ~findReactContainerForID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%     12    0.1%                                                                              LazyCompile: *getReactRootIDFromNodeID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      6    0.0%                                                                          LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    131    0.8%      1    0.0%                                                                    LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    110    0.6%     37    0.2%                                                                      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     68    0.4%     24    0.1%                                                                        LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40    0.2%      1    0.0%                                                                          LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%     38    0.2%                                                                            LazyCompile: bind native v8natives.js:1578
+     20    0.1%      8    0.0%                                                                      LazyCompile: ~<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    102    0.6%      2    0.0%                                                                    LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     98    0.6%      9    0.1%                                                                      LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     89    0.5%      7    0.0%                                                                        LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     63    0.4%     21    0.1%                                                                          LazyCompile: b native v8natives.js:1582
+     42    0.2%     33    0.2%                                                                            Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     19    0.1%     15    0.1%                                                                          Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    0.2%     26    0.2%                                                                  LazyCompile: *enqueue /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    536    3.2%      6    0.0%                                                                LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    522    3.1%     58    0.3%                                                                  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    452    2.7%    154    0.9%                                                                    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    274    1.6%     15    0.1%                                                                      LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    259    1.5%    259    1.5%                                                                        LazyCompile: bind native v8natives.js:1578
+     21    0.1%     21    0.1%                                                                      LazyCompile: *hasOwnProperty native v8natives.js:249
+    231    1.4%     18    0.1%                                                                LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    108    0.6%     39    0.2%                                                                  LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    0.3%     12    0.1%                                                                    LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     20    0.1%      8    0.0%                                                                      LazyCompile: *forEach native array.js:1087
+     22    0.1%     19    0.1%                                                                    Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     93    0.5%      8    0.0%                                                                  LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     59    0.3%      8    0.0%                                                                    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageComposer.jsx:31
+     51    0.3%     45    0.3%                                                                      Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     26    0.2%     10    0.1%                                                                    LazyCompile: *render /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     68    0.4%     14    0.1%                                                                LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     31    0.2%      4    0.0%                                                                  LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     23    0.1%     23    0.1%                                                                  Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     30    0.2%     30    0.2%                                                                LazyCompile: ~_maskContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     26    0.2%      9    0.1%                                                                LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    671    4.0%     45    0.3%                                                            LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    611    3.6%      1    0.0%                                                              LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    610    3.6%      0    0.0%                                                                LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    610    3.6%     15    0.1%                                                                  LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    572    3.4%      5    0.0%                                                                    LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    538    3.2%    529    3.1%                                                                      LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     23    0.1%     22    0.1%                                                                      LazyCompile: ~flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     94    0.6%     10    0.1%                                                        LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     65    0.4%     15    0.1%                                                          LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     26    0.2%      1    0.0%                                                            LazyCompile: *isCustomAttribute /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25    0.1%     17    0.1%                                                              LazyCompile: b native v8natives.js:1582
+     17    0.1%      1    0.0%                                                            LazyCompile: *quoteAttributeValueForBrowser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     95    0.6%      1    0.0%                                                    LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     94    0.6%     12    0.1%                                                      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     77    0.5%     21    0.1%                                                        LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     54    0.3%      2    0.0%                                                          LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     52    0.3%     50    0.3%                                                            LazyCompile: bind native v8natives.js:1578
+     22    0.1%     10    0.1%                                                    LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%      4    0.0%                                                    LazyCompile: *instantiateReactComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    830    4.9%      2    0.0%                                                LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    828    4.9%     40    0.2%                                                  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    585    3.4%    205    1.2%                                                    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    346    2.0%     21    0.1%                                                      LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    325    1.9%    325    1.9%                                                        LazyCompile: bind native v8natives.js:1578
+     28    0.2%     28    0.2%                                                      LazyCompile: *hasOwnProperty native v8natives.js:249
+    124    0.7%      3    0.0%                                                    LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:35
+    120    0.7%      9    0.1%                                                      LazyCompile: b native v8natives.js:1582
+    111    0.7%      4    0.0%                                                        LazyCompile: *getStateFromStores /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:39
+     83    0.5%     18    0.1%                                                          LazyCompile: *getAllChrono /Volumes/Projects/react-perf/chat/stores/ThreadStore.js:29
+     34    0.2%     18    0.1%                                                            LazyCompile: *sort native array.js:741
+     17    0.1%      5    0.0%                                                            LazyCompile: *forEach native array.js:1087
+     60    0.4%      1    0.0%                                                    LazyCompile: *getInitialState /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:41
+     59    0.3%      7    0.0%                                                      LazyCompile: b native v8natives.js:1582
+     51    0.3%      0    0.0%                                                        LazyCompile: *getStateFromStores /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:45
+     40    0.2%      3    0.0%                                                          LazyCompile: *getAllForCurrentThread /Volumes/Projects/react-perf/chat/stores/MessageStore.js:63
+     36    0.2%      8    0.0%                                                            LazyCompile: *getAllForThread /Volumes/Projects/react-perf/chat/stores/MessageStore.js:52
+     28    0.2%     13    0.1%                                                              LazyCompile: *forEach native array.js:1087
+    439    2.6%      8    0.0%                                                LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    300    1.8%      3    0.0%                                                  LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    162    1.0%     25    0.1%                                                    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:47
+     84    0.5%     12    0.1%                                                      LazyCompile: *map native array.js:1215
+     72    0.4%      8    0.0%                                                        LazyCompile: *<anonymous> /Volumes/Projects/react-perf/chat/components/ThreadSection.jsx:48
+     63    0.4%     48    0.3%                                                          Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48    0.3%     39    0.2%                                                      Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    135    0.8%     18    0.1%                                                    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:56
+     66    0.4%     20    0.1%                                                      LazyCompile: *map native array.js:1215
+     46    0.3%      2    0.0%                                                        LazyCompile: *getMessageListItem /Volumes/Projects/react-perf/chat/components/MessageSection.jsx:24
+     44    0.3%     32    0.2%                                                          Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     43    0.3%     28    0.2%                                                      Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    128    0.8%     22    0.1%                                                  LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     86    0.5%      9    0.1%                                                    LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     48    0.3%      9    0.1%                                                      LazyCompile: *forEach native array.js:1087
+     39    0.2%     39    0.2%                                                        LazyCompile: *<anonymous> /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:59
+     29    0.2%      1    0.0%                                                      LazyCompile: *o.(anonymous function) /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:738
+     17    0.1%     17    0.1%                                                        LazyCompile: *keys native v8natives.js:333
+     19    0.1%     17    0.1%                                                    Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    115    0.7%     13    0.1%                                                LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     54    0.3%      9    0.1%                                                  LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     30    0.2%      3    0.0%                                                    LazyCompile: *forEach native array.js:1087
+     27    0.2%     27    0.2%                                                      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:59
+     46    0.3%     36    0.2%                                                  Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%     39    0.2%                                                LazyCompile: ~_maskContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    337    2.0%     19    0.1%                                            LazyCompile: instantiateChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    306    1.8%      0    0.0%                                              LazyCompile: *flattenChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    306    1.8%      0    0.0%                                                LazyCompile: *traverseAllChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    306    1.8%      3    0.0%                                                  LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    290    1.7%      2    0.0%                                                    LazyCompile: *traverseAllChildrenImpl /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    280    1.6%    276    1.6%                                                      LazyCompile: *flattenSingleChildIntoContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    280    1.6%      1    0.0%                                        LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    226    1.3%      0    0.0%                                          LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    220    1.3%      0    0.0%                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    220    1.3%      2    0.0%                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    194    1.1%      0    0.0%                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    194    1.1%      3    0.0%                                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    191    1.1%      0    0.0%                                                    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    191    1.1%      0    0.0%                                                      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    183    1.1%      1    0.0%                                                        LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    181    1.1%      1    0.0%                                                          LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    164    1.0%      0    0.0%                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    164    1.0%      1    0.0%                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    147    0.9%      0    0.0%                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    139    0.8%      3    0.0%                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    132    0.8%      1    0.0%                                                                    LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    131    0.8%      0    0.0%                                                                      LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    123    0.7%      0    0.0%                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    123    0.7%      3    0.0%                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    101    0.6%      0    0.0%                                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     97    0.6%      0    0.0%                                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     92    0.5%      0    0.0%                                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     92    0.5%      4    0.0%                                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     80    0.5%      2    0.0%                                                                                    LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     78    0.5%      0    0.0%                                                                                      LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     63    0.4%      0    0.0%                                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     63    0.4%      0    0.0%                                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     48    0.3%      0    0.0%                                                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40    0.2%      3    0.0%                                                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      0    0.0%                                                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      1    0.0%                                                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    0.2%      2    0.0%                                                                                                    LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     27    0.2%      0    0.0%                                                                                                      LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     53    0.3%      0    0.0%                                          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     53    0.3%      0    0.0%                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     53    0.3%      0    0.0%                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     47    0.3%      0    0.0%                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     47    0.3%      2    0.0%                                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    0.3%      0    0.0%                                                    LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    0.3%      0    0.0%                                                      LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     44    0.3%      0    0.0%                                                        LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     44    0.3%      0    0.0%                                                          LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40    0.2%      0    0.0%                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     40    0.2%      0    0.0%                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     37    0.2%      0    0.0%                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     35    0.2%      1    0.0%                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    0.2%      1    0.0%                                                                    LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      0    0.0%                                                                      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    0.2%      0    0.0%                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    0.2%      0    0.0%                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25    0.1%      0    0.0%                                                                            LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    0.1%      1    0.0%                                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     23    0.1%      0    0.0%                                                                                LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     23    0.1%      0    0.0%                                                                                  LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    0.1%      0    0.0%                                                                                    LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     21    0.1%      0    0.0%                                                                                      LazyCompile: mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      0    0.0%                                                                                        LazyCompile: *mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      0    0.0%                                                                                          LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     54    0.3%     13    0.1%                                        LazyCompile: _createOpenTagMarkupAndPutListeners /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     29    0.2%      4    0.0%                                          LazyCompile: createMarkupForProperty /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     44    0.3%      0    0.0%                                    LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     44    0.3%      2    0.0%                                      LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     41    0.2%     15    0.1%                                        LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     26    0.2%      2    0.0%                                          LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    0.1%     24    0.1%                                            LazyCompile: bind native v8natives.js:1578
+    287    1.7%      1    0.0%                                LazyCompile: *Constructor /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    276    1.6%     25    0.1%                                  LazyCompile: *<anonymous> /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    236    1.4%     90    0.5%                                    LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    137    0.8%      4    0.0%                                      LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    133    0.8%    132    0.8%                                        LazyCompile: bind native v8natives.js:1578
+    184    1.1%      3    0.0%                                LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    137    0.8%     16    0.1%                                  LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    110    0.6%      3    0.0%                                    LazyCompile: *mergedResult /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     45    0.3%     11    0.1%                                      LazyCompile: *RouterMixin.getChildContext /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/RouterMixin.js:41
+     18    0.1%      1    0.0%                                        LazyCompile: *o.(anonymous function) /Volumes/Projects/react-perf/node_modules/babel/node_modules/core-js/shim.js:738
+     32    0.2%      6    0.0%                                      LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     18    0.1%      1    0.0%                                        LazyCompile: *forEach native array.js:1087
+     17    0.1%     17    0.1%                                          LazyCompile: *<anonymous> /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:59
+     27    0.2%     24    0.1%                                      LazyCompile: mergeIntoWithNoDuplicateKeys /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     37    0.2%      3    0.0%                                  LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     34    0.2%      1    0.0%                                    LazyCompile: *render /Volumes/Projects/react-perf/chat/components/ChatApp.jsx:38
+     33    0.2%     30    0.2%                                      Script: ReactElement.createElement /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     91    0.5%      4    0.0%                                LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     65    0.4%      3    0.0%                                  LazyCompile: *mergedResult /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     25    0.1%     11    0.1%                                    LazyCompile: *RouterMixin.getChildContext /Volumes/Projects/react-perf/node_modules/flux-router-component/lib/RouterMixin.js:41
+     18    0.1%     15    0.1%                                    LazyCompile: mergeIntoWithNoDuplicateKeys /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     18    0.1%      6    0.0%                                    LazyCompile: *FluxibleMixin.getChildContext /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleMixin.js:57
+     22    0.1%     22    0.1%                                  Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     28    0.2%     28    0.2%                                LazyCompile: ~_maskContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    118    0.7%      7    0.0%                            LazyCompile: _renderValidatedComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     66    0.4%      1    0.0%                              LazyCompile: *_renderValidatedComponentWithoutOwnerOrContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     65    0.4%      3    0.0%                                LazyCompile: *React.createClass.render /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleComponent.js:25
+     62    0.4%     15    0.1%                                  LazyCompile: *cloneWithProps /Volumes/Projects/react-perf/node_modules/react/lib/cloneWithProps.js:32
+     32    0.2%     20    0.1%                                    LazyCompile: ReactElement.createElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:149
+     40    0.2%     18    0.1%                              LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     19    0.1%     18    0.1%                                Script: assign /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     99    0.6%     26    0.2%                            LazyCompile: *Constructor /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:829
+     67    0.4%     18    0.1%                              LazyCompile: bindAutoBindMethods /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:696
+     46    0.3%     13    0.1%                                LazyCompile: *bindAutoBindMethod /Volumes/Projects/react-perf/node_modules/react/lib/ReactClass.js:650
+     33    0.2%     33    0.2%                                  LazyCompile: bind native v8natives.js:1578
+     42    0.2%      0    0.0%                            LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     42    0.2%      1    0.0%                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%      0    0.0%                                LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%      0    0.0%                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     39    0.2%      0    0.0%                                    LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     34    0.2%      0    0.0%                                      LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    0.2%      0    0.0%                                        LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    0.2%      0    0.0%                                          LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    0.2%      0    0.0%                                            LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     33    0.2%      3    0.0%                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    0.1%      0    0.0%                                                LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     24    0.1%      0    0.0%                                                  LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     22    0.1%      0    0.0%                                                    LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%      0    0.0%                                                      LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%      0    0.0%                                                        LazyCompile: ~_createContentMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%      0    0.0%                                                          LazyCompile: ~mountChildren /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%      0    0.0%                                                            LazyCompile: ~mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     20    0.1%      0    0.0%                                                              LazyCompile: mountComponent /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      3    0.0%                            LazyCompile: _processChildContext /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    278    1.6%      1    0.0%                          LazyCompile: *addChecksumToMarkup /Volumes/Projects/react-perf/react/react-with-addons.js:1
+    258    1.5%    258    1.5%                            LazyCompile: *adler32 /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     32    0.2%      2    0.0%                      LazyCompile: *createReactRootID /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     17    0.1%      3    0.0%                        LazyCompile: *createReactRootIndex /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     19    0.1%      8    0.0%                      LazyCompile: *standardReleaser /Volumes/Projects/react-perf/react/react-with-addons.js:1
+     84    0.5%      8    0.0%                    LazyCompile: *createElement /Volumes/Projects/react-perf/node_modules/fluxible/lib/FluxibleContext.js:44
+     69    0.4%     12    0.1%                      LazyCompile: b native v8natives.js:1582
+     57    0.3%     18    0.1%                        LazyCompile: ReactElement.createElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:149
+     38    0.2%     38    0.2%                          LazyCompile: ReactElement /Volumes/Projects/react-perf/node_modules/react/lib/ReactElement.js:93
+
+     44    0.3%     44    0.3%  LazyCompile: *test native regexp.js:217
+

@@ -5378,7 +5378,7 @@ function mapSingleChildIntoContext(traverseContext, child, name, i) {
   var mapBookKeeping = traverseContext;
   var mapResult = mapBookKeeping.mapResult;
 
-  var keyUnique = !mapResult.hasOwnProperty(name);
+  var keyUnique = ('undefined' === typeof mapResult[name]);
   if ("production" !== "production") {
     ("production" !== "production" ? warning(
       keyUnique,
@@ -19380,7 +19380,7 @@ var warning = _dereq_(169);
 function flattenSingleChildIntoContext(traverseContext, child, name) {
   // We found a component instance.
   var result = traverseContext;
-  var keyUnique = !result.hasOwnProperty(name);
+  var keyUnique = ('undefined' === typeof result[name]);
   if ("production" !== "production") {
     ("production" !== "production" ? warning(
       keyUnique,

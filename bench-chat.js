@@ -35,11 +35,11 @@ Promise.all([StockAppPromise, OptimizedAppPromise]).then(function (contexts) {
 
     // add tests
     suite
-        .addFunction('RenderChat', function(React, context) {
-            React.renderToString(context.createElement());
+        .addFunction('RenderChat', function(LocalReact, context) {
+            LocalReact.renderToString(context.createElement());
         })
         .addInput('Optimized', [ReactOpt, contexts[1]])
-        .addInput('Stock', [ReactOpt, contexts[0]])
+        .addInput('Stock', [React, contexts[0]])
         // add listeners
         .on('error', function (e) {
             throw e.target.error;

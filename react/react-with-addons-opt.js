@@ -13362,6 +13362,9 @@
 
   var ReactReconciler = _dereq_(87);
   var ReactChildReconciler = _dereq_(35);
+  var instantiateReactComponent = _dereq_(145);
+  var traverseAllChildren = _dereq_(166);
+  var warning = _dereq_(169);
 
   /**
    * Updating children of a component may trigger recursive updates. The depth is
@@ -13513,7 +13516,6 @@
      * @lends {ReactMultiChild.prototype}
      */
     Mixin: {
-
       /**
        * Generates a "mount image" for each of the supplied children. In the case
        * of `ReactDOMComponent`, a mount image is a string of markup.
@@ -13523,28 +13525,43 @@
        * @internal
        */
       mountChildren: function(nestedChildren, transaction, context) {
-        var children = ReactChildReconciler.instantiateChildren(
-            nestedChildren, transaction, context
-        );
-        this._renderedChildren = children;
+        var rootNodeID = this._rootNodeID;
+        var children = {};
         var mountImages = [];
         var index = 0;
-        for (var name in children) {
-          if (children.hasOwnProperty(name)) {
-            var child = children[name];
-            // Inlined for performance, see `ReactInstanceHandles.createReactID`.
-            var rootID = this._rootNodeID + name;
-            var mountImage = ReactReconciler.mountComponent(
-                child,
-                rootID,
-                transaction,
-                context
-            );
-            child._mountIndex = index;
-            mountImages.push(mountImage);
-            index++;
-          }
+        if (nestedChildren == null) {
+          return mountImages;
         }
+        // Inlined for performance, see `ReactChildReconciler.instantiateChildren`.
+        traverseAllChildren(nestedChildren, function mountChild(traverseContext, child, name) {
+          if (child == null || children[name] !== undefined) {
+            if ("production" !== "production") {
+              ("production" !== "production" ? warning(
+                  children[name] !== undefined,
+                  'mountChildren(...): Encountered two children with the same key, ' +
+                  '`%s`. Child keys must be unique; when two children share a key, only ' +
+                  'the first child will be used.',
+                  name
+              ) : null);
+            }
+            return;
+          }
+
+          var childInstance = instantiateReactComponent(child);
+          children[name] = childInstance;
+          // Inlined for performance, see `ReactInstanceHandles.createReactID`.
+          var rootID = rootNodeID + name;
+          var mountImage = ReactReconciler.mountComponent(
+              childInstance,
+              rootID,
+              transaction,
+              context
+          );
+          childInstance._mountIndex = index;
+          mountImages.push(mountImage);
+          index++;
+        }, mountImages);
+        this._renderedChildren = children;
         return mountImages;
       },
 
@@ -13772,7 +13789,7 @@
 
   module.exports = ReactMultiChild;
 
-},{"35":35,"40":40,"78":78,"87":87}],78:[function(_dereq_,module,exports){
+},{"145":145,"166":166,"169":169,"35":35,"40":40,"78":78,"87":87}],78:[function(_dereq_,module,exports){
   /**
    * Copyright 2013-2015, Facebook, Inc.
    * All rights reserved.

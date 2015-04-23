@@ -5168,6 +5168,8 @@
   var flattenChildren = _dereq_(130);
   var instantiateReactComponent = _dereq_(145);
   var shouldUpdateReactComponent = _dereq_(164);
+  var traverseAllChildren = _dereq_(166);
+  var warning = _dereq_(169);
 
   /**
    * ReactChildReconciler provides helpers for initializing or updating a set of
@@ -5184,17 +5186,31 @@
      * @return {?object} A set of child instances.
      * @internal
      */
-    instantiateChildren: function(nestedChildNodes, transaction, context) {
-      var children = flattenChildren(nestedChildNodes);
-      for (var name in children) {
-        if (children.hasOwnProperty(name)) {
-          var child = children[name];
-          // The rendered children must be turned into instances as they're
-          // mounted.
-          var childInstance = instantiateReactComponent(child, null);
-          children[name] = childInstance;
-        }
+    instantiateChildren: function (nestedChildNodes, transaction, context) {
+      if (nestedChildNodes == null) {
+        return nestedChildNodes;
       }
+      var children = {};
+      // Inlined for performance, see `flattenChildren`.
+      traverseAllChildren(nestedChildNodes, function mountChild(traverseContext, child, name) {
+        if (child == null) {
+          return;
+        }
+        if (traverseContext[name] !== undefined) {
+          if ("production" !== "production") {
+            ("production" !== "production" ? warning(
+                true,
+                'mountChildren(...): Encountered two children with the same key, ' +
+                '`%s`. Child keys must be unique; when two children share a key, only ' +
+                'the first child will be used.',
+                name
+            ) : null);
+          }
+          return;
+        }
+
+        traverseContext[name] = instantiateReactComponent(child);
+      }, children);
       return children;
     },
 
@@ -5275,7 +5291,7 @@
 
   module.exports = ReactChildReconciler;
 
-},{"130":130,"145":145,"164":164,"87":87}],36:[function(_dereq_,module,exports){
+},{"130":130,"145":145,"164":164,"166":166,"169":169,"87":87}],36:[function(_dereq_,module,exports){
   /**
    * Copyright 2013-2015, Facebook, Inc.
    * All rights reserved.

@@ -38,8 +38,8 @@ Promise.all([StockAppPromise, OptimizedAppPromise]).then(function (contexts) {
         .addFunction('RenderChat', function(LocalReact, context) {
             LocalReact.renderToString(context.createElement());
         })
-        .addInput('Optimized', [ReactOpt, contexts[1]])
-        .addInput('Stock', [React, contexts[0]])
+        .addInput('InlineInstantiateChildenWithTraverse', [React, contexts[0]])
+        .addInput('InlineInstantiateChildrenWithMap', [ReactOpt, contexts[1]])
         // add listeners
         .on('error', function (e) {
             throw e.target.error;

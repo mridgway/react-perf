@@ -5168,8 +5168,7 @@
   var flattenChildren = _dereq_(130);
   var instantiateReactComponent = _dereq_(145);
   var shouldUpdateReactComponent = _dereq_(164);
-  var traverseAllChildren = _dereq_(166);
-  var warning = _dereq_(169);
+  var ReactChildren = _dereq_(36);
 
   /**
    * ReactChildReconciler provides helpers for initializing or updating a set of
@@ -5187,33 +5186,7 @@
      * @internal
      */
     instantiateChildren: function (nestedChildNodes, transaction, context) {
-      if (nestedChildNodes == null) {
-        return nestedChildNodes;
-      }
-      var children = {};
-      // Inlined for performance, see `flattenChildren`.
-      traverseAllChildren(nestedChildNodes, ReactChildReconciler.instantiateChildIntoContext, children);
-      return children;
-    },
-
-    instantiateChildIntoContext: function (traverseContext, child, name) {
-      if (child == null) {
-        return;
-      }
-      if (traverseContext[name] !== undefined) {
-        if ("production" !== "production") {
-          ("production" !== "production" ? warning(
-              true,
-              'mountChildren(...): Encountered two children with the same key, ' +
-              '`%s`. Child keys must be unique; when two children share a key, only ' +
-              'the first child will be used.',
-              name
-          ) : null);
-        }
-        return;
-      }
-
-      traverseContext[name] = instantiateReactComponent(child);
+      return ReactChildren.mapObject(nestedChildNodes, instantiateReactComponent);
     },
 
     /**
@@ -5293,7 +5266,7 @@
 
   module.exports = ReactChildReconciler;
 
-},{"130":130,"145":145,"164":164,"166":166,"169":169,"87":87}],36:[function(_dereq_,module,exports){
+},{"130":130,"145":145,"164":164,"36":36,"87":87}],36:[function(_dereq_,module,exports){
   /**
    * Copyright 2013-2015, Facebook, Inc.
    * All rights reserved.
@@ -5418,7 +5391,7 @@
     var traverseContext = MapBookKeeping.getPooled(mapResult, func, context);
     traverseAllChildren(children, mapSingleChildIntoContext, traverseContext);
     MapBookKeeping.release(traverseContext);
-    return ReactFragment.create(mapResult);
+    return mapResult;
   }
 
   function forEachSingleChildDummy(traverseContext, child, name, i) {
@@ -5438,7 +5411,10 @@
 
   var ReactChildren = {
     forEach: forEachChildren,
-    map: mapChildren,
+    map: function (children, func, context) {
+      return ReactFragment.create(mapChildren(children, func, context));
+    },
+    mapObject: mapChildren,
     count: countChildren
   };
 

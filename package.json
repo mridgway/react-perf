@@ -9,7 +9,7 @@
     "bench-hello": "NODE_ENV=production node bench-hello.js",
     "profile": "NODE_ENV=production node --prof --prof_lazy --log profile.js; node-tick-processor v8.log | grep -v 'unknown code' > profile.txt; NODE_ENV=production node --prof --prof_lazy --log profile-opt.js; node-tick-processor v8.log | grep -v 'unknown code' > profile-opt.txt",
     "start": "NODE_ENV=production node bench-chat.js",
-    "test": "NODE_ENV=production node bench-chat.js"
+    "test": "NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js"
   },
   "dependencies": {
     "babel": "^4.6.3",

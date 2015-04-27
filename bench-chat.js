@@ -49,8 +49,8 @@ Promise.all([StockAppPromise, OptimizedAppPromise, Optimized2AppPromise]).then(f
             LocalReact.renderToString(context.createElement());
         })
         .addInput('Stock', [React, contexts[0]])
-        .addInput('InlineInstantiateChildrenWithMap', [ReactOpt, contexts[1]])
-        .addInput('InlineInstantiateChildenWithTraverse', [React, contexts[2]])
+        .addInput('InlineInstantiateChildenWithTraverse', [ReactOpt, contexts[1]])
+        .addInput('InlineInstantiateChildrenWithMap', [React, contexts[2]])
         // add listeners
         .on('error', function (e) {
             throw e.target.error;

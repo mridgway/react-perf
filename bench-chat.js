@@ -31,7 +31,7 @@ Promise.all([StockAppPromise, OptimizedAppPromise, Optimized2AppPromise]).then(f
     var suite = new Benchtable();
     var output = React.renderToStaticMarkup(contexts[0].createElement());
     var outputOpt = ReactOpt.renderToStaticMarkup(contexts[1].createElement());
-    var outputOpt2 = ReactOpt.renderToStaticMarkup(contexts[2].createElement());
+    var outputOpt2 = ReactOpt2.renderToStaticMarkup(contexts[2].createElement());
     if (output !== outputOpt || output !== outputOpt2) {
         throw new Error('Output not the same');
     }
@@ -40,7 +40,7 @@ Promise.all([StockAppPromise, OptimizedAppPromise, Optimized2AppPromise]).then(f
     for(var i=0; i<1000; ++i) {
         React.renderToStaticMarkup(contexts[0].createElement());
         ReactOpt.renderToStaticMarkup(contexts[1].createElement());
-        ReactOpt.renderToStaticMarkup(contexts[2].createElement());
+        ReactOpt2.renderToStaticMarkup(contexts[2].createElement());
     }
 
     // add tests
@@ -50,7 +50,7 @@ Promise.all([StockAppPromise, OptimizedAppPromise, Optimized2AppPromise]).then(f
         })
         .addInput('Stock', [React, contexts[0]])
         .addInput('InlineInstantiateChildenWithTraverse', [ReactOpt, contexts[1]])
-        .addInput('InlineInstantiateChildrenWithMap', [React, contexts[2]])
+        .addInput('InlineInstantiateChildrenWithMap', [ReactOpt2, contexts[2]])
         // add listeners
         .on('error', function (e) {
             throw e.target.error;

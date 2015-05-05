@@ -24,6 +24,8 @@ Promise.all([StockAppPromise, OptimizedAppPromise]).then(function (contexts) {
     var output = React.renderToStaticMarkup(contexts[0].createElement());
     var outputOpt = ReactOpt.renderToStaticMarkup(contexts[1].createElement());
     if (output !== outputOpt) {
+        console.log('Stock:', output);
+        console.log('Optimized:', outputOpt);
         throw new Error('Output not the same');
     }
 

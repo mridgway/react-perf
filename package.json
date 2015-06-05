@@ -7,25 +7,29 @@
   "scripts": {
     "bench-chat": "NODE_ENV=production node bench-chat.js",
     "bench-hello": "NODE_ENV=production node bench-hello.js",
-    "profile": "NODE_ENV=production node --prof --prof_lazy --log profile.js; node-tick-processor v8.log | grep -v 'unknown code' > profile.txt; NODE_ENV=production node --prof --prof_lazy --log profile-opt.js; node-tick-processor v8.log | grep -v 'unknown code' > profile-opt.txt",
-    "start": "NODE_ENV=production node bench-chat.js",
-    "test": "NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js; NODE_ENV=production node bench-chat.js"
+    "build": "gulp",
+    "profile": "NODE_ENV=production node --prof --prof_lazy --log tests/profile/chat.js; node-tick-processor v8.log | grep -v 'unknown code' > artifacts/profile.txt; rm v8.log",
+    "start": "NODE_ENV=production node ./tests/bench/chat.js",
+    "test": "for i in {1..10}; do npm start; done"
   },
   "dependencies": {
     "babel": "^4.6.3",
+    "benchtable": "^0.0.5",
     "classnames": "^1.1.4",
     "debug": "^2.0.0",
-    "flux-router-component": "^0.6.1",
-    "fluxible": "^0.3.1",
-    "fluxible-plugin-fetchr": "^0.2.3",
-    "fluxible-plugin-routr": "^0.3.0",
+    "es6-promise": "^2.0.1",
+    "fluxible": "^0.4.10",
+    "fluxible-plugin-fetchr": "^0.3.1",
+    "fluxible-router": "^0.1.8",
+    "mockery": "^1.4.0",
+    "profiler": "^1.2.3",
     "react": "^0.13.1"
   },
   "devDependencies": {
-    "babel-loader": "^4.0.0",
-    "benchtable": "0.0.4",
-    "es6-promise": "^2.0.1",
-    "profiler": "^1.2.3",
-    "tick": "^0.1.1"
+    "gulp": "^3.9.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-shell": "^0.4.2",
+    "tick": "^0.1.1",
+    "yargs": "^3.10.0"
   }
 }

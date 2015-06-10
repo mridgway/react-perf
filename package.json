@@ -9,7 +9,7 @@
     "bench-hello": "NODE_ENV=production node bench-hello.js",
     "build": "gulp",
     "profile": "NODE_ENV=production node --prof --prof_lazy --log tests/profile/chat.js; node-tick-processor v8.log | grep -v 'unknown code' > artifacts/profile.txt; rm v8.log",
-    "start": "NODE_ENV=production node ./tests/bench/chat.js",
+    "start": "NODE_ENV=production node ./tests/bench/chat.js -f inlineInstantiateChildren",
     "test": "for i in {1..10}; do npm start; done"
   },
   "dependencies": {

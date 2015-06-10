@@ -6,7 +6,6 @@ var argv = require('yargs').argv;
 var remote = argv.r || argv.remote || null;
 var commit = argv.c || argv.commit || 'origin/master';
 var folder = commit.replace(/.*\//g, '');
-console.log(remote, commit, folder);
 
 gulp.task('clean', shell.task([
     'rm -Rf /tmp/react || 0'

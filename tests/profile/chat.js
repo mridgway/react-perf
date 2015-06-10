@@ -1,7 +1,11 @@
 require('babel/register');
+
+var argv = require('yargs').argv;
+var testFolder = argv.f || argv.folder || 'master';
+
 var profiler = require('profiler');
 var renderAppWithFreshReact = require('../../utils/renderAppWithFreshReact');
-var reactPath = require.resolve('../../react/0.13.3/react-with-addons');
+var reactPath = require.resolve('../../react/' + testFolder + '/react-with-addons');
 var statePath = require.resolve('../fixtures/apps/chat/state.json');
 var appPath = require.resolve('../fixtures/apps/chat/app');
 

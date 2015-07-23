@@ -22,7 +22,8 @@
     "fluxible-router": "^0.1.8",
     "mockery": "^1.4.0",
     "profiler": "^1.2.3",
-    "react": "^0.13.1"
+    "react": "^0.13.1",
+    "react-server": "git+https://github.com/mridgway/react-server.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

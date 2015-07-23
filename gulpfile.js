@@ -20,7 +20,7 @@ gulp.task('remote', ['clone'], shell.task([
 ], { cwd: '/tmp' }));
 
 gulp.task('checkout', ['remote', 'clone'], shell.task([
-    'git fetch ' + remote || 'origin',
+    'git fetch ' + (remote || 'origin'),
     'git checkout -f ' + commit
 ], { cwd: '/tmp/react' }));
 

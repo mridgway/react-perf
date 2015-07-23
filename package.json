@@ -5,8 +5,7 @@
   "description": "Perf testing React",
   "author": "Michael Ridgway <mridgway@yahoo-inc.com>",
   "scripts": {
-    "bench-chat": "NODE_ENV=production node bench-chat.js",
-    "bench-hello": "NODE_ENV=production node bench-hello.js",
+    "bench": "NODE_ENV=production node tests/bench/chat.js",
     "build": "gulp",
     "profile": "NODE_ENV=production node --prof --prof_lazy --log tests/profile/chat.js; node-tick-processor v8.log | grep -v 'unknown code' > artifacts/profile.txt; rm v8.log",
     "start": "NODE_ENV=production node ./tests/bench/chat.js",

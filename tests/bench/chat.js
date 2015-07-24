@@ -17,7 +17,7 @@ var appPath = require.resolve('../fixtures/apps/chat/app');
 var statePath = require.resolve(appPath + '/../state.json');
 var currentReactPath = require.resolve('../../react/' + testFolder + '/react-with-addons');
 var react13Path = require.resolve('../../react/0.13.3/react-with-addons');
-var reactServerPath = require.resolve('react-server');
+var reactServerPath = require.resolve('../../react/master/react-with-addons-binder');
 
 console.log('Comparing ' + testFolder + ' with baseline (' + baselineFolder + ' and react-server)');
 
@@ -35,8 +35,8 @@ renderAppWithFreshReact(currentReactPath, appPath, statePath).then(function (rea
                     React.renderToString(context.createElement());
                 })
                 .addInput('React ' + testFolder, [reactMasterApp.React, reactMasterApp.context])
-                .addInput('React ' + baselineFolder, [react13App.React, react13App.context])
-                .addInput('React-Server', [reactServerApp.React, reactServerApp.context])
+                //.addInput('React ' + baselineFolder, [react13App.React, react13App.context])
+                .addInput('React Auto Binder', [reactServerApp.React, reactServerApp.context])
                 // add listeners
                 .on('error', function (e) {
                     throw e.target.error;

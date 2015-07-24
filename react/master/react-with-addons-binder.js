@@ -5141,6 +5141,7 @@ function mixSpecIntoComponent(Constructor, spec) {
       }
     }
   }
+  proto.__reactAutoBinder = buildBinder(proto.__reactAutoBindMap);
 }
 
 function mixStaticSpecIntoComponent(Constructor, statics) {
@@ -5220,6 +5221,15 @@ function createChainedFunction(one, two) {
   };
 }
 
+function buildBinder(autoBindMap) {
+  var src = '';
+  for (var unsafeKey in autoBindMap) {
+    var key = JSON.stringify(unsafeKey);
+    src += 'instance[' + key + ']=function(){return map[' + key + '].apply(instance, arguments); };'
+  }
+  return new Function('instance', 'map', src);
+}
+
 /**
  * Binds a method to the component.
  *
@@ -5267,12 +5277,7 @@ function bindAutoBindMethod(component, method) {
  * @param {object} component Component whose method is going to be bound.
  */
 function bindAutoBindMethods(component) {
-  for (var autoBindKey in component.__reactAutoBindMap) {
-    if (component.__reactAutoBindMap.hasOwnProperty(autoBindKey)) {
-      var method = component.__reactAutoBindMap[autoBindKey];
-      component[autoBindKey] = bindAutoBindMethod(component, ReactErrorUtils.guard(method, component.constructor.displayName + '.' + autoBindKey));
-    }
-  }
+  component.__reactAutoBinder(component, component.__reactAutoBindMap);
 }
 
 /**

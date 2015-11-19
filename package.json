@@ -17,13 +17,13 @@
     "classnames": "^1.1.4",
     "debug": "^2.0.0",
     "es6-promise": "^2.0.1",
-    "fluxible": "^0.4.10",
+    "fluxible": "^1.0.0",
     "fluxible-plugin-fetchr": "^0.3.1",
-    "fluxible-router": "^0.1.8",
+    "fluxible-router": "^0.4.0",
     "mockery": "^1.4.0",
     "profiler": "^1.2.3",
-    "react": "^0.13.1",
-    "react-server": "git+https://github.com/mridgway/react-server.git"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

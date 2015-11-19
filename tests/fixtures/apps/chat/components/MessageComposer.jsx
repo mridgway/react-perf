@@ -15,6 +15,7 @@
  */
 'use strict';
 var React = require('react');
+var createMessage = require('../actions/createMessage');
 var ENTER_KEY_CODE = 13;
 
 var MessageComposer = React.createClass({
@@ -50,9 +51,9 @@ var MessageComposer = React.createClass({
 
             var text = this.state.text.trim();
             if (text) {
-                //this.context.executeAction(createMessage, {
-                //    text: text
-                //});
+                this.context.executeAction(createMessage, {
+                    text: text
+                });
             }
             this.setState({text: ''});
         }

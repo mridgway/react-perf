@@ -5,10 +5,15 @@
 'use strict';
 var React = require('react');
 var Fluxible = require('fluxible');
+var fetchrPlugin = require('fluxible-plugin-fetchr');
 
 var app = new Fluxible({
     component: require('./components/ChatApp.jsx')
 });
+
+app.plug(fetchrPlugin({
+    xhrPath: '/api'
+}));
 
 app.registerStore(require('./stores/RouteStore'));
 app.registerStore(require('./stores/MessageStore'));

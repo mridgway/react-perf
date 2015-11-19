@@ -19,7 +19,7 @@ var MessageComposer = require('./MessageComposer.jsx');
 var MessageListItem = require('./MessageListItem.jsx');
 var MessageStore = require('../stores/MessageStore');
 var ThreadStore = require('../stores/ThreadStore');
-var connectToStores = require('fluxible/addons/connectToStores');
+var connectToStores = require('fluxible-addons-react/connectToStores');
 
 function getMessageListItem(message) {
     return (
@@ -40,7 +40,7 @@ var MessageSection = React.createClass({
         var messageListItems = this.props.messages.map(getMessageListItem);
         return (
             <div className="message-section">
-                <h3 className="message-thread-heading">{this.props.thread.name}</h3>
+                <h3 className="message-thread-heading">{this.props.thread && this.props.thread.name}</h3>
                 <ul className="message-list" ref="messageList">
                     {messageListItems}
                 </ul>
@@ -54,15 +54,8 @@ var MessageSection = React.createClass({
     },
 
     _scrollToBottom: function() {
-        var ul = this.refs.messageList.getDOMNode();
+        var ul = this.refs.messageList;
         ul.scrollTop = ul.scrollHeight;
-    },
-
-    /**
-     * Event handler for 'change' events coming from the MessageStore
-     */
-    _onChange: function() {
-        this.setState(this.getStateFromStores());
     }
 
 });
@@ -70,16 +63,10 @@ var MessageSection = React.createClass({
 module.exports = connectToStores(
     MessageSection,
     [ThreadStore, MessageStore],
-    {
-        MessageStore: function (store) {
-            return {
-                messages: store.getAllForCurrentThread()
-            };
-        },
-        ThreadStore: function (store) {
-            return {
-                thread: store.getCurrent()
-            };
+    function (context, props) {
+        return {
+            messages: context.getStore(MessageStore).getAllForCurrentThread(),
+            thread: context.getStore(ThreadStore).getCurrent()
         }
     }
 );
